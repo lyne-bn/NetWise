@@ -53,7 +53,7 @@ const Topology = () => {
                         {connectedUsers.map(user => (
                             <div className="child-node" key={user._id}>
                                 <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="client" />
-                                <p>{user._id}</p> {/* Affichez l'ID de l'utilisateur ici */}
+                                
                             </div>
                         ))}
                     </div>

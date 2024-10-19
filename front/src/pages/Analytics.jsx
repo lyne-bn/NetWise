@@ -93,7 +93,7 @@ const Analytics = () => {
     // Function to handle the report submission to the backend
     const handleReportSubmit = async () => {
         try {
-            const response = await fetch('http://localhost:8000/api/download-report', {
+            const response = await fetch('http://localhost:8000/api/download-report/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -136,8 +136,9 @@ const Analytics = () => {
 
     // Function to send a message to the chatbot
     const handleChatSubmit = async () => {
+        console.log(chatInput)
         try {
-            const response = await fetch('http://localhost:8000/api/chat', {
+            const response = await fetch('http://localhost:8000/api/chat/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
